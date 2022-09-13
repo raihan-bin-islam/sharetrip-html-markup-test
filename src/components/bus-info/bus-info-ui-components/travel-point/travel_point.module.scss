@@ -1,0 +1,24 @@
+@import "../../../../sass/main";
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  .selectForm {
+    display: flex;
+    gap: 1.2rem;
+    .label {
+      font-size: $font-size-small;
+      font-weight: $normal;
+    }
+    .selectItem {
+      font-size: $font-size-base;
+      font-weight: $normal;
+    }
+  }
+  .seatAvailabilityContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

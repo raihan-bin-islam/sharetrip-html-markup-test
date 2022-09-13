@@ -1,0 +1,80 @@
+@import "../../../../sass/main";
+
+.container {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  .busInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      h2 {
+        padding: 0.4rem 1.6rem;
+        border-radius: 1.6rem;
+        font-size: $font-size-heading;
+        background: $heading-bg;
+      }
+      font-size: $font-size-xs;
+      font-weight: $normal;
+      text-align: center;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: $font-size-base;
+      svg {
+        width: $font-size-base;
+        height: $font-size-base;
+      }
+    }
+  }
+
+  .departureInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .departureTime {
+      p {
+        font-size: $font-size-small;
+        font-weight: $normal;
+
+        color: $grey;
+      }
+
+      h4 {
+        font-size: $font-size-base;
+        font-weight: $semiMediumBold;
+      }
+
+      h5 {
+        font-size: $font-size-common;
+        font-weight: $semibold;
+      }
+    }
+    .iconContainer {
+      text-align: center;
+      svg {
+        width: 5rem;
+        height: 5rem;
+      }
+      h5 {
+        font-size: $font-size-common;
+        font-weight: $normal;
+        color: $orange;
+      }
+      p {
+        font-size: $font-size-small;
+        font-weight: $normal;
+        color: $grey;
+      }
+    }
+  }
+}

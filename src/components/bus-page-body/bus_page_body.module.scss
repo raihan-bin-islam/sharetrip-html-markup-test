@@ -1,0 +1,32 @@
+@import "../../sass/main";
+
+.busPageSection {
+  margin-inline: 32.5rem;
+  margin-top: 1.4rem;
+
+  display: flex;
+  gap: 2.9rem;
+
+  @include response(m-desktop) {
+    margin-inline: 15rem;
+  }
+  @include response(tab-port) {
+    margin-inline: 5rem;
+  }
+  @include response(phone) {
+    margin-inline: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    h1 {
+      font-size: $font-size-base;
+      font-weight: $semibold;
+    }
+  }
+}

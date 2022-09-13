@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay"), url("./SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay"), url("./SFPRODISPLAYMEDIUM.OTF") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay"), url("./SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}

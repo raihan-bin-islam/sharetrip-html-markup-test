@@ -1,0 +1,54 @@
+@import "../../../sass/main";
+
+.button {
+  z-index: 2;
+  overflow: hidden;
+
+  width: 100%;
+  gap: 0.8rem;
+  padding-inline: 5rem;
+
+  color: $black;
+
+  p {
+    font-family: "SFProDisplay";
+    font-size: $font-size-common;
+    font-weight: $normal;
+  }
+
+  transition: all 250ms ease;
+
+  .buttonSvg {
+    svg {
+      width: 3.4rem;
+      height: 3.4rem;
+      fill: $grey;
+    }
+  }
+
+  &:hover {
+    color: $white !important;
+    .buttonSvg {
+      svg {
+        fill: $white;
+      }
+    }
+
+    background: darken($color: $primary-darker, $amount: 20) !important;
+
+    transition: background 250ms ease;
+  }
+}
+
+.buttonActive {
+  color: $white !important;
+  .buttonSvg {
+    svg {
+      fill: $white !important;
+    }
+  }
+
+  background: $primary-darker !important;
+
+  transition: background 250ms ease;
+}

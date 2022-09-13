@@ -1,0 +1,27 @@
+@import "../../../sass/main";
+
+.filterContainer {
+  margin-bottom: 2rem;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10rem;
+    h2 {
+      font-size: $font-size-base;
+    }
+    h3 {
+      font-size: $font-size-common;
+      font-weight: $semibold;
+    }
+    .button {
+      font-size: 1.6rem;
+    }
+  }
+
+  .pdTopBtm {
+    padding-top: 2.6rem;
+    padding-bottom: 1rem;
+  }
+}

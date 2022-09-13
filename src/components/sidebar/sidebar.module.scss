@@ -1,0 +1,111 @@
+@import "../../sass/main";
+
+.sidebar {
+  position: relative;
+
+  width: fit-content;
+
+  padding: 1.6rem;
+
+  border: 1px solid $white-border;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: all 1s ease;
+  @include response(phone) {
+    min-height: 12vh;
+    max-height: 12vh;
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  .filterIconContainer {
+    padding-block: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    @include response(phone) {
+      display: flex;
+    }
+    h2 {
+      font-size: $font-size-heading;
+    }
+    span {
+      display: block;
+      background-color: transparent;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+      rotate: 45deg;
+
+      transition: rotate 250ms ease;
+    }
+  }
+  .openMenu {
+    span {
+      rotate: -135deg;
+    }
+  }
+
+  h6 {
+    font-size: $font-size-small;
+    font-weight: $normal;
+  }
+  h5 {
+    font-size: $font-size-common;
+    font-weight: $semibold;
+  }
+  h4 {
+    font-size: $font-size-base;
+    font-weight: $semibold;
+  }
+  .separator {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+    background-color: $off-white;
+  }
+  .priceRangeContainer {
+    // background-color: red;
+    padding-top: 1.6rem;
+    .priceRangeTitleContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      h4 {
+        font-weight: $bold;
+      }
+    }
+  }
+
+  .checkboxContainer {
+    display: flex;
+    align-items: center;
+    h5 {
+      color: $grey;
+    }
+  }
+
+  .scheduleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 1.6rem;
+    padding: 1.6rem 0;
+
+    .scheduleTimeContainer {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.sidebarOpen {
+  min-height: 100vh;
+  max-height: 150vh;
+}

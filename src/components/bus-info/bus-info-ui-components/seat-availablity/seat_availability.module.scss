@@ -1,0 +1,42 @@
+@import "../../../../sass/main";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: $white-bg-seat-availability;
+
+  svg {
+    width: $font-size-common + 1rem;
+    height: $font-size-common + 1rem;
+  }
+
+  h4 {
+    font-size: $font-size-common;
+    font-weight: $semibold;
+
+    color: $grey;
+  }
+}
+
+.red {
+  svg {
+    fill: #db6848;
+  }
+}
+.green {
+  svg {
+    fill: #2e7d31;
+  }
+}
+.blue {
+  svg {
+    fill: #5bb4ff;
+  }
+}
+.orange {
+  svg {
+    fill: #eb950e;
+  }
+}

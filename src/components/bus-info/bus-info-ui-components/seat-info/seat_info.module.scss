@@ -1,0 +1,72 @@
+@import "../../../../sass/main";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  border-left: 1px solid #e0e0e1;
+
+  button {
+    font-size: $font-size-common;
+    font-weight: $semibold;
+    width: 100%;
+    &:hover {
+      border-color: darken($color: $primary, $amount: 20) !important;
+      background: darken($color: $primary, $amount: 20) !important;
+      color: $white !important;
+    }
+  }
+  .primaryBtn {
+    background-color: $primary;
+    color: $white;
+  }
+  .notSelected {
+    color: $grey50;
+    border-color: $grey50;
+  }
+
+  .seatTypeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    h3 {
+      font-size: $font-size-base;
+      font-weight: $semiMediumBold;
+    }
+    p {
+      font-size: $font-size-common;
+      font-weight: $semibold;
+    }
+
+    .seatClass {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      p {
+        color: $grey;
+      }
+    }
+  }
+  .checkboxContainer {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: $font-size-common;
+      font-weight: $semibold;
+      color: $grey;
+
+      span {
+        color: $primary;
+      }
+    }
+  }
+}
